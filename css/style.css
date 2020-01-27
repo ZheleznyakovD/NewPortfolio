@@ -217,10 +217,13 @@ body {
     line-height: 12px;
   }
   .social-link {
-    margin-left: 20px;
+    margin-left: 10px;
   }
-  .hide {
-    display: none;
+  .header-logo {
+    height: 30px;
+  }
+  .social-icon {
+    height: 18px;
   }
 }
 

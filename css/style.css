@@ -219,6 +219,9 @@ body {
   .social-link {
     margin-left: 20px;
   }
+  .icon-hide {
+    display: none;
+  }
 }
 
 .advantages {

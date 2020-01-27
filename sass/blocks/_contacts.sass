@@ -1,0 +1,117 @@
+.contacts
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-form
+    max-width: 380px
+    background: #FFFFFF
+    box-shadow: -5px 5px 0px #FFC41D
+    border-radius: 5px
+    padding: 40px 46px
+  &-text
+    flex-basis: 50%
+  &-data 
+    display: flex
+    flex-wrap: wrap
+  &__tel, &__mail
+    flex-basis: 50%
+  &__social
+    flex-basis: 100%
+    margin-top: 53px
+    margin-bottom: 42px
+  &__title
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+    margin: 0
+    margin-bottom: 15px
+  &-link
+    display: inline-block
+    text-decoration: none
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #FFFFFF
+    margin-right: 37px
+    margin-bottom: 20px
+    &:last-child
+      margin-right: 0
+      margin-bottom: 0
+    &:hover 
+      text-decoration: underline
+  &-policy
+    display: inline-block
+    margin-top: 72px
+    width: 100%
+    font-weight: 400
+    font-size: 15px
+    line-height: 18px
+    text-decoration-line: underline
+    color: #A5A5A5
+.form-title
+  font-weight: 700
+  font-size: 18px
+  line-height: 28px
+  text-align: center
+  color: $bg
+  margin: 0
+  margin-bottom: 29px
+.input
+  background: #F8F8F8
+  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25)
+  border-radius: 5px
+  border: none
+  font-weight: 400
+  font-size: 14px
+  line-height: 28px
+  color: #949494
+  padding: 18px 50px
+  outline: none
+  width: 100%
+  &-name
+    margin-bottom: 17px
+    background-image: url(../img/contacts/user-icon.svg)
+    background-repeat: no-repeat
+    background-position: center left 20px
+  &-tel
+    margin-bottom: 26px
+    background-image: url(../img/contacts/phone-icon.svg)
+    background-repeat: no-repeat
+    background-position: center left 20px
+.form-button
+  width: 100%
+
+  // responsive
+
+@media ( max-width: 873px )
+  .contacts
+    &-block
+      flex-direction: column
+      align-items: flex-start
+    &__tel
+      margin-bottom: 35px
+    &__tel, &__mail
+      flex-basis: 100%
+    &-form
+      margin-bottom: 50px
+@media ( max-width: 565px  )
+  .form-button
+    font-weight: 700
+    font-size: 10px
+  .contacts
+    &__social
+      display: flex
+      flex-direction: column
+      margin-bottom: 30px
+    &-policy
+      margin-top: 25px
+    &-link
+      margin-bottom: 13px
+      font-size: 14px
+      line-height: 16px
+    &__title
+      font-size: 18px
+      line-height: 21px
+
+

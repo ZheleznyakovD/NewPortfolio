@@ -1,0 +1,101 @@
+.hero
+  background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%)
+  padding-top: 50px
+  padding-bottom: 155px
+  &-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 105px
+  &-text
+    max-width: 60%
+  &-avatar
+    width: 370px
+    height: 370px
+    background-color: #141229
+    border-radius: 50%
+    background: url(../img/Zheliazniakou.png) no-repeat
+    background-position: center top 
+    border: 10px solid #fff
+  &__subtitle
+    display: inline-block
+    margin-bottom: 14px
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+    color: $yellow
+  &__title
+    margin-top: 0
+    margin-bottom: 20px
+    font-weight: 700
+    font-size: 50px
+    line-height: 59px
+  &__description
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 40px
+    font-weight: 400
+    font-size: 16px
+    line-height: 28px
+  &__button
+    padding: 24px 42px
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 12px
+    line-height: 14px
+    
+.social-link
+  margin-left: 15px
+  &:first-child
+    margin-left: 0
+
+    // responsive
+@media ( max-width: 1050px  )
+  .hero
+    &-avatar
+      width: 310px
+      height: 310px
+      border-width: 7px
+      background-size: 100%
+      background-position: center top 4px
+
+@media ( max-width: 873px  )
+  .hero
+    padding-top: 40px
+    padding-bottom: 70px   
+    &-avatar
+      order: 0
+    &-content
+      flex-direction: column
+    &-text
+      order: 1
+      text-align: center
+      margin-top: 20px
+@media ( max-width: 565px  )
+  .hero
+    &-avatar
+      width: 113px
+      height: 113px
+      border-width: 4px
+    &__title
+      font-weight: 700
+      font-size: 24px
+      line-height: 28px
+    &__description
+      font-weight: 400
+      font-size: 14px
+      line-height: 140%
+    &__subtitle
+      font-weight: 400
+      font-size: 16px
+      line-height: 27px
+    &__button
+      font-weight: bold
+      font-size: 10px
+      line-height: 12px
+  .social-link
+    margin-left: 20px

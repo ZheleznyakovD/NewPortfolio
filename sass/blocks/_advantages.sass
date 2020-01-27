@@ -1,0 +1,40 @@
+.advantages
+  background: $bg
+  &-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.advantage
+  flex-basis: 30%
+  margin-bottom: 64px
+  &__title
+    margin-top: 22px
+    margin-bottom: 16px
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+  &__description
+    font-weight: 400
+    font-size: 16px
+    line-height: 28px
+    margin: 0
+    
+    // responsive
+@media ( max-width: 873px  )
+  .advantage
+    flex-basis: 45%
+@media ( max-width: 565px  )
+  .advantage
+    flex-basis: 100%
+    margin-bottom: 30px
+    &__title
+      font-size: 18px
+      line-height: 28px
+    &__description
+      font-size: 14px
+      line-height: 28px
+.advantages-block
+      text-align: center
+
+
+
